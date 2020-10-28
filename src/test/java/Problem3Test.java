@@ -7,6 +7,7 @@ public class Problem3Test {
     @Test
     public void catchTheBugInBook() {
         // quiz
+        
     }
 
     @Test
