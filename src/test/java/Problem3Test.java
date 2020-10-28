@@ -7,12 +7,19 @@ public class Problem3Test {
     @Test
     public void catchTheBugInBook() {
         // quiz
-        
+        BookFiction ff = new BookFiction("f1", "au1", "g1");
+        BookFiction ff2 = new BookFiction(ff);
+        ff2.setTitle("f2");
+        assertTrue(ff.equals(ff2));
     }
 
     @Test
     public void catchTheBugInMovie() {
         // quiz
+        MovieAction ma = new MovieAction("g", "a1");
+        MovieAction ma2 = new MovieAction(ma);
+        ma2.setTitle("ma2");
+        assertTrue(ma.equals(ma2));
     }
 
     // DO NOT REMOVE OR CHANGE ANYTHING BELOW THIS!
